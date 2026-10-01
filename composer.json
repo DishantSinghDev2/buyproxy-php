@@ -1,0 +1,27 @@
+{
+  "name": "buyproxy/buyproxy",
+  "description": "Official BuyProxy PHP SDK — generate residential, mobile, ISP and datacenter proxies, manage reseller customers and top up bandwidth. PHP 8.1+, typed, works with Laravel, Symfony and plain PHP.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["buyproxy", "proxy", "proxies", "residential proxies", "rotating proxies", "mobile proxies", "isp proxies", "datacenter proxies", "socks5", "proxy api", "web scraping", "guzzle", "laravel", "symfony", "sdk"],
+  "homepage": "https://www.buyproxy.org/docs/sdks",
+  "authors": [{ "name": "BuyProxy", "email": "support@buyproxy.org", "homepage": "https://www.buyproxy.org" }],
+  "support": {
+    "issues": "https://github.com/DishantSinghDev2/buyproxy-php/issues",
+    "source": "https://github.com/DishantSinghDev2/buyproxy-php",
+    "docs": "https://www.buyproxy.org/docs/api-reference/introduction"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5 || ^11.0"
+  },
+  "autoload": { "psr-4": { "BuyProxy\\": "src/" } },
+  "autoload-dev": { "psr-4": { "BuyProxy\\Tests\\": "tests/" } },
+  "scripts": { "test": "phpunit" },
+  "config": { "sort-packages": true },
+  "minimum-stability": "stable"
+}
